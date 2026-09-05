@@ -12,9 +12,10 @@ class Solution {
         }
         String jha = "";
         while(!ans.empty()){
-            jha = jha + ans.pop();
+            jha = ans.pop() + jha;
         }
-        String ok = new StringBuilder(jha).reverse().toString();
-        return ok;
+        // String ok = new StringBuilder(jha).reverse().toString();
+        // return ok;
+        return jha;
     }
 }
