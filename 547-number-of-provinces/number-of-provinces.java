@@ -13,7 +13,7 @@ class Solution {
     }
     private void dfs(int i,int[][] isConnected,boolean[] ok){
         ok[i] = true;
-        for(int j = 0;j<isConnected.length;j++){
+        for(int j = 1;j<isConnected.length;j++){
             if(isConnected[i][j]==1 && !ok[j]){
                 dfs(j,isConnected,ok);
             }
